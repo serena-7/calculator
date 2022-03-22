@@ -28,7 +28,16 @@ reader.question("What would you like to calculate?", function(input){
 		answer = num1 / num2;
 	} else if (mathSymbol === 'sqrt'){
 		answer = Math.sqrt(num1);
-	} else{
+	} else if (mathSymbol === 'sq'){
+		answer = Math.pow(num1, 2);
+	} else if (mathSymbol === 'cu'){
+		answer = Math.pow(num1, 3);
+	} else if (mathSymbol === 'pow'){
+		answer = Math.pow(num1, num2);
+	} else if (mathSymbol === '%'){
+		answer = num1 % num2;
+	}
+	else{
 		answer = "invalid";
 	}
 
